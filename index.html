@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+    <title>Aman AG</title>
+</head>
+<body>
+    <section id = 'banner'>
+        <img src="./img/logo.png" alt="logo" class="logo">
+        <div class="banner-text">
+            <h1>Aman Ag</h1>
+            <p>read more learn more</p>
+            <div class="banner-btn">
+                <a href="#"><span></span> Find Out</a>
+                <a href="#"><span></span> Read More</a>
+            </div>
+        </div>
+    </section>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">Contcet us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="./img/menu.png" alt="bg2" id = "menu">
+    </div>
+<script>
+    var manubtn = document.getElementById("menubtn")
+    var sidenav = document.getElementById("sidenav")
+    var menu = document.getElementById("menu")
+    sidenav.style.right = "-250px;"
+
+menubtn.onclick = function(){
+
+    if(sidenav.style.right == "-250px"){
+        sidenav.style.right = "0";
+        menu.src = "img/close.jpg";
+    }
+    else{
+        sidenav.style.right = "-250px";
+        menu.src = "img/menu.png";
+    }
+}
+</script>
+</body>
+</html>
